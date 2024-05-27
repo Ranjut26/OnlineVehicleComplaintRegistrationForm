@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zota vehicles complaint registration form</title>
+  </head>
+  <body>
+    <h1
+      style="
+        text-align: center;
+        font-family: Trebuchet MS;
+        background-color: rgb(185, 249, 179);
+        color: rgb(54, 240, 101);
+      "
+    >
+      ZOTA Vehicles - Complaint registration form
+    </h1>
+    <form action="/submit_form" method="post" style="background-color: #f5c5ea">
+      <br />
+      <br />
+      <label for="fname">First Name</label> <br />
+      <input type="text" id="fname" name="fname" style="color: black" />
+      <br />
+      <br />
+      <label for="lname">Last Name</label> <br />
+      <input type="text" id="lname" name="lname" /> <br />
+      <br />
+      <label for="custID">Customer ID</label> <br />
+      <input type="text" id="custID" name="custID" maxlength="6" />
+      <br />
+      <br />
+      <label for="phone">Contact number</label> <br />
+      <input type="number" id="phone" name="phone" maxlength="10" />
+      <br />
+      <br />
+      <label for="address">Address</label> <br />
+      <input
+        type="text"
+        id="address"
+        name="address"
+        placeholder="No.1, ABC Street, XYZ flats, 1st Floor, ABC Nagar, Chennai - 600028"
+        style="width: 440px"
+      />
+      <br />
+      <br />
+      <label for="mail">Email us @ :</label> <br />
+      <input type="email" id="mail" name="mail" required /> <br />
+      <br />
+      <label for="vehiclefile"
+        >Drop the files of your complaint regarding the vehicle</label
+      >
+      <br />
+      <input type="file" id="vehiclefile" name="vehiclefile" multiple />
+      <br />
+      <br />
+      <label for="telephoneno">Telephone number</label> <br />
+      <input
+        type="tel"
+        id="telephoneno"
+        name="telephoneno"
+        pattern="[0-9]{4}-[0-9]{4}"
+      />
+      <br />
+      <br />
+      <label for="purchasedate">Date of vehicle purchase</label> <br />
+      <input type="date" id="purchasedate" name="purchasedate" /> <br />
+      <br />
+      <label for="ownerimagefile">Drop vehicle owner's image as file</label>
+      <br />
+      <input
+        type="file"
+        id="ownerimagefile"
+        name="ownerimagefile"
+        style="width: 200px; height: 50px"
+      />
+      <br />
+      <label for="vehicles">Choose the vehicle type:</label> <br />
+      <select id="vehicles" name="vehicles" style="width: 80px">
+        <option value="Scooty">Scooty</option>
+        <option value="Bike">Bike</option>
+        <option value="Car">Car</option>
+        <option value="lorry">Lorry</option>
+      </select>
+      <br />
+      <br />
+      <label for="insurancedetails">Drop your insurance details</label>
+      <br />
+      <input
+        type="file"
+        id="insurancedetails"
+        name="insurancedetails"
+        style="width: 200px; height: 50px"
+      />
+      <p>Choose your fuel type:</p>
+      <input type="radio" id="Petrol" name="fuel" value="Petrol" />
+      <label for="Petrol">Petrol</label> <br />
+      <input type="radio" id="Diesel" name="fuel" value="Diesel" />
+      <label for="Diesel">Diesel</label> <br />
+      <input
+        type="radio"
+        id="Electric charge"
+        name="fuel"
+        value="Electric charge"
+      />
+      <label for="Electric charge">Electric charge</label> <br />
+      <input type="submit" /> <br />
+    </form>
+  </body>
+</html>
